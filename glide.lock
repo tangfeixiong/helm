@@ -1,5 +1,5 @@
 hash: 05c56f2ae4c8bcbaf2c428e2e070ec00f865b284ea61dd671e2c4e117f2d6528
-updated: 2016-08-19T17:30:32.462379907-06:00
+updated: 2016-09-17T23:14:46.044705003Z
 imports:
 - name: github.com/aokoli/goutils
   version: 9c37978a95bd5c709a15883b6242714ea6709e64
@@ -11,6 +11,8 @@ imports:
   - quantile
 - name: github.com/blang/semver
   version: 31b736133b98f26d5e078ec9eb591666edfd091f
+- name: github.com/cloudfoundry-incubator/candiedyaml
+  version: 99c3df83b51532e3615f851d8c2dbb638f5313bf
 - name: github.com/coreos/go-oidc
   version: 5cf2aa52da8c574d3aa4458f471ad6ae2240fe6b
   subpackages:
@@ -92,7 +94,7 @@ imports:
 - name: github.com/evanphx/json-patch
   version: 465937c80b3c07a7c7ad20cc934898646a91c1de
 - name: github.com/ghodss/yaml
-  version: 73d445a93680fa1a78ae23a5839bad48f32ba1ee
+  version: aa0c862057666179de291b67d9f093d12b5a8473
 - name: github.com/gogo/protobuf
   version: 82d16f734d6d871204a3feb1a73cb220cc92574c
   subpackages:
@@ -133,7 +135,7 @@ imports:
   - ptypes/any
   - ptypes/timestamp
 - name: github.com/google/cadvisor
-  version: c2ea32971ae033041f0fb0f309b1dee94fd1d55f
+  version: 404f31ff971a5d5d9595f1a7ca6a07881ac37fed
   subpackages:
   - api
   - cache/memory
@@ -237,7 +239,7 @@ imports:
 - name: github.com/prometheus/procfs
   version: 490cc6eb5fa45bf8a8b7b73c8bc82a8160e8531d
 - name: github.com/spf13/cobra
-  version: 6a8bd97bdb1fc0d08a83459940498ea49d3e8c93
+  version: 9c28e4bbd74e5c3ed7aacbc552b2cab7cfdfe744
 - name: github.com/spf13/pflag
   version: 367864438f1b1a3c7db4da06a2f55b144e6784e0
 - name: github.com/technosophos/moniker
@@ -308,9 +310,9 @@ imports:
 - name: gopkg.in/inf.v0
   version: 3887ee99ecf07df5b447e9b00d9c0b2adaa9f3e4
 - name: gopkg.in/yaml.v2
-  version: a83829b6f1293c91addabc89d0571c246397bbf4
+  version: 31c299268d302dd0aa9a0dcf765a3d58971ac83f
 - name: k8s.io/kubernetes
-  version: a570a0fef12408f1c0a7214952055bad39c160d7
+  version: 17d4cf1af43a03a5997ea9142b19e5b1ac2d8747
   subpackages:
   - federation/apis/federation
   - federation/apis/federation/install
