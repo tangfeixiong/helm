@@ -1,5 +1,5 @@
-hash: 05c56f2ae4c8bcbaf2c428e2e070ec00f865b284ea61dd671e2c4e117f2d6528
-updated: 2016-09-17T23:14:46.044705003Z
+hash: 7597ab613e56036107442251661f2eb2e740d2d2120c32b0d448fddc09401afc
+updated: 2016-09-18T00:00:18.469191545Z
 imports:
 - name: github.com/aokoli/goutils
   version: 9c37978a95bd5c709a15883b6242714ea6709e64
@@ -59,7 +59,7 @@ imports:
   - pkg/timeutils
   - pkg/units
 - name: github.com/docker/engine-api
-  version: dea108d3aa0c67d7162a3fd8aa65f38a430019fd
+  version: 3d72d392d07bece8d7d7b2a3b6b2e57c2df376a2
   subpackages:
   - client
   - client/transport
@@ -135,7 +135,7 @@ imports:
   - ptypes/any
   - ptypes/timestamp
 - name: github.com/google/cadvisor
-  version: 404f31ff971a5d5d9595f1a7ca6a07881ac37fed
+  version: 4dbefc9b671b81257973a33211fb12370c1a526e
   subpackages:
   - api
   - cache/memory
@@ -238,6 +238,8 @@ imports:
   - model
 - name: github.com/prometheus/procfs
   version: 490cc6eb5fa45bf8a8b7b73c8bc82a8160e8531d
+- name: github.com/Sirupsen/logrus
+  version: 51fe59aca108dc5680109e7b2051cbdcfa5a253c
 - name: github.com/spf13/cobra
   version: 9c28e4bbd74e5c3ed7aacbc552b2cab7cfdfe744
 - name: github.com/spf13/pflag
@@ -312,7 +314,8 @@ imports:
 - name: gopkg.in/yaml.v2
   version: 31c299268d302dd0aa9a0dcf765a3d58971ac83f
 - name: k8s.io/kubernetes
-  version: 17d4cf1af43a03a5997ea9142b19e5b1ac2d8747
+  version: 52492b4bff99ef3b8ca617d385a3ff0612f9402d
+  repo: https://github.com/tangfeixiong/kubernetes
   subpackages:
   - federation/apis/federation
   - federation/apis/federation/install
@@ -343,9 +346,9 @@ imports:
   - pkg/apis/apps
   - pkg/apis/apps/install
   - pkg/apis/apps/v1alpha1
-  - pkg/apis/authentication.k8s.io
-  - pkg/apis/authentication.k8s.io/install
-  - pkg/apis/authentication.k8s.io/v1beta1
+  - pkg/apis/authentication
+  - pkg/apis/authentication/install
+  - pkg/apis/authentication/v1beta1
   - pkg/apis/authorization
   - pkg/apis/authorization/install
   - pkg/apis/authorization/v1beta1
@@ -373,6 +376,7 @@ imports:
   - pkg/capabilities
   - pkg/client/cache
   - pkg/client/clientset_generated/internalclientset
+  - pkg/client/clientset_generated/internalclientset/typed/authentication/unversioned
   - pkg/client/clientset_generated/internalclientset/typed/autoscaling/unversioned
   - pkg/client/clientset_generated/internalclientset/typed/batch/unversioned
   - pkg/client/clientset_generated/internalclientset/typed/core/unversioned
@@ -421,11 +425,13 @@ imports:
   - pkg/runtime/serializer/streaming
   - pkg/runtime/serializer/versioning
   - pkg/security/podsecuritypolicy/util
+  - pkg/securitycontextconstraints/util
   - pkg/storage
   - pkg/types
   - pkg/util
   - pkg/util/crypto
   - pkg/util/deployment
+  - pkg/util/diff
   - pkg/util/errors
   - pkg/util/flag
   - pkg/util/flowcontrol
@@ -435,6 +441,7 @@ imports:
   - pkg/util/httpstream
   - pkg/util/httpstream/spdy
   - pkg/util/integer
+  - pkg/util/interrupt
   - pkg/util/intstr
   - pkg/util/json
   - pkg/util/jsonpath
@@ -449,6 +456,7 @@ imports:
   - pkg/util/sets
   - pkg/util/slice
   - pkg/util/strategicpatch
+  - pkg/util/term
   - pkg/util/validation
   - pkg/util/validation/field
   - pkg/util/wait
